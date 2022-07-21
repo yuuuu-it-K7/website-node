@@ -16,4 +16,4 @@ app.get('/form', (req, res) => {
 });
 
 //localhost:3000でアクセス可能なサーバーを起動する
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
