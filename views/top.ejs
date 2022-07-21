@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--文字コードを指定-->
+    <meta charset="UTF-8">
+    <!-- viewportを読み込む -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--cssを読み込む-->
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Font Awesomeを読み込む-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <%- include('header'); %>
+        
+    <div class="main">
+        <div class="top-wrapper">
+           <div class="top-container">
+              <h1>Lorem ipsum, dolor </h1>
+              <h1>Lorem ipsum dolor, sit amet consectetur </h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, eaque? </p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita provident eaque repudiandae enim dolorem animi totam in iste voluptas.</p>
+           </div> 
+        </div>
+        
+        <div class="contents">
+          <div class="top-content">
+             <h1 id="concept">Concept</h1>
+             <p>Lorem ipsum</p>
+             <p>Lorem ipsum, dolor </p>
+             <p>Lorem ipsum dolor, sit </p>
+             <p>Lorem ipsum dolor, sit amet consectetur</p>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, eaque</p>
+             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, eaque</p>
+          </div>
+            <h1 id="project">Project</h1>
+          <div class="second-content">
+              <img id="mypic" src="/images/architecture-1477041_640.png" class="top1" width="800" height="400"> 
+              <!--画像が自動的に切り替わるがcssのtransitionが機能しなくなる-->
+               <!-- <script>
+                    const pics_src = ["/images/living-room-2046668_640.png","images/kitchen-2165756_640.png","/images/architecture-1477041_640.png"];
+                    let num = -1;
+                    function slideshow_timer(){
+                      if (num === 2){
+                        num = 0;
+                      } 
+                      else {
+                        num ++;
+                      }
+                      document.getElementById("mypic").src = pics_src[num];
+                     }
+                    setInterval(slideshow_timer, 4500);
+                </script>     -->
+               <p>Lorem ipsum</p>
+               <p>Lorem ipsum, dolor </p>
+               <p>Lorem ipsum dolor, sit </p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+            </div>
+            <div class="middle-content">
+              <img src="/images/architecture-1867187_640.png" class="middle1" width="600" height="400">
+               <p>Lorem ipsum</p>
+               <p>Lorem ipsum, dolor </p>
+               <p>Lorem ipsum dolor, sit </p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+            </div>
+            <div class="end-content">
+              <img src="/images/residence-2219972_640.png" class="end1" width="800" height="400">
+               <p>Lorem ipsum</p>
+               <p>Lorem ipsum, dolor </p>
+               <p>Lorem ipsum dolor, sit </p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+               <p>Lorem ipsum dolor, sit amet consectetur</p>
+            </div>
+           
+        </div>
+          
+        <div class="cantact-form"></div>
+    </div>
+
+    <%- include('footer'); %>
+    
+</body>
+</html>

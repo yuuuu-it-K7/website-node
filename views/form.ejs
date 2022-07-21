@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!--文字コードを指定-->
+    <meta charset="UTF-8">
+    <!-- viewportを読み込む -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ・資料請求</title>
+    <!--cssを読み込む-->
+    <link rel="stylesheet" href="/css/style2.css">
+    <!--Font Awesomeを読み込む-->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    
+</head>
+<body>
+   
+   <%- include('header'); %>
+
+    <div class="form-sentence">
+        <h1>お問い合わせ・資料請求</h1>
+        <p> ご質問やご意見がございましたら、お気軽にお問い合わせください。</p>
+        <p>＊資料請求をご希望の場合は、お手数ですがお問い合わせ欄にご住所をご記入ください</p>
+    </div>
+    <div class="Form">
+      <div class="Form-Item">
+         <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+         <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+      </div>
+      <div class="Form-Item">
+         <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+         <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+      </div>
+      <div class="Form-Item">
+         <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+         <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+      </div>
+      <div class="Form-Item">
+         <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+         <textarea class="Form-Item-Textarea"></textarea>
+      </div>
+      <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+
+    <%- include('footer'); %>
+
+</body>
+</html>
+
